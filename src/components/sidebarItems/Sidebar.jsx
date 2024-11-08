@@ -2,10 +2,12 @@ import { Drawer, List, useMediaQuery, useTheme } from "@mui/material";
 import CloseSharpIcon from "@mui/icons-material/CloseSharp";
 import React from "react";
 import { sidebarItems } from "../../assets/data/sidebarData";
+import { useNavigate } from "react-router";
 
 const Sidebar = ({ open, handleClose }) => {
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
+  const navigate = useNavigate();
   return (
     <div>
       <Drawer
@@ -39,10 +41,27 @@ const Sidebar = ({ open, handleClose }) => {
           </div>
 
           <ul className="flex flex-col gap-4 px-5 text-center md:text-start">
+            <li
+              onClick={() => {
+                location.pathname === "/"
+                  ? document
+                      .getElementById("head")
+                      .scrollIntoView({ behavior: "smooth" })
+                  : navigate("/");
+                handleClose();
+              }}
+              className="hover:text-orange-500 duration-30 cursor-pointer font-semibold"
+            >
+              HOME
+            </li>
             {sidebarItems.map((item, index) => (
               <li
                 key={index}
-                className="hover:text-orange-500 duration-30 cursor-pointer font-semibold"
+                className={`${
+                  location.pathname !== "/"
+                    ? "cursor-not-allowed text-zinc-500 font-semibold"
+                    : "hover:text-orange-500 duration-30 cursor-pointer font-semibold"
+                }`}
                 onClick={() => {
                   item.section();
                   handleClose();

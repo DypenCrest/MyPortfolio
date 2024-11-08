@@ -1,10 +1,5 @@
 export const sidebarItems = [
   {
-    title: "Home",
-    section: () =>
-      document.getElementById("head").scrollIntoView({ behavior: "smooth" }),
-  },
-  {
     title: "About",
     section: () =>
       document.getElementById("aboutMe").scrollIntoView({ behavior: "smooth" }),
