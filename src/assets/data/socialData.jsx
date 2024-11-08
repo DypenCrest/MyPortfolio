@@ -17,6 +17,12 @@ export const socialData = [
     url: "https://www.linkedin.com/in/dipen-shrestha-5a2836326/",
     icon: <LinkedInIcon fontSize="large" />,
   },
-  { url: "", icon: <InstagramIcon fontSize="large" /> },
-  { url: "", icon: <RedditIcon fontSize="large" /> },
+  {
+    url: "https://www.instagram.com/shresta_dipen/",
+    icon: <InstagramIcon fontSize="large" />,
+  },
+  {
+    url: "https://www.reddit.com/user/SGTDYPEN/submitted/",
+    icon: <RedditIcon fontSize="large" />,
+  },
 ];
