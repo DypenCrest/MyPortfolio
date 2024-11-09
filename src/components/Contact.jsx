@@ -5,7 +5,7 @@ import { socialData } from "../assets/data/socialData";
 
 const Contact = () => {
   return (
-    <div className="text-center">
+    <div className="text-center w-full">
       <Bounce>
         <h1 className="text-4xl md:text-8xl text-orange-500">STAY IN TOUCH</h1>
       </Bounce>

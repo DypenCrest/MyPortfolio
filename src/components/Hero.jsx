@@ -40,11 +40,11 @@ const Hero = () => {
         />
         <Grid2
           size={{ md: 7.7, sm: 7, xs: 12 }}
-          className="hero-right h-[63%] sm:h-full pt-20 sm:pt-0"
+          className="hero-right h-[63%] sm:h-full pt-32 sm:pt-0"
         >
           <div className="flex flex-col justify-center items-center sm:items-end h-full">
             <div className="flex flex-col gap-4 items-center sm:items-start sm:mr-16 lg:mr-28 w-[86%] md:w-[60%] lg:w-[45%] break-words">
-              <div className="about-header text-center sm:text-left">
+              <div className="about-header text-center sm:text-left z-20">
                 <h6 className="opacity-80">{headerData.title}</h6>
                 <h1 className="text-3xl md:text-4xl font-semibold">
                   {headerData.name}

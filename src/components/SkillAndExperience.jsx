@@ -7,13 +7,15 @@ const SkillAndExperience = () => {
     <div className="md:h-dvh py-8">
       <div className="flex flex-col md:flex-row">
         <div className="w-full md:w-[40%]">
-        <h2 className="text-4xl md:text-5xl text-orange-500 mb-[40px] ">
+          <h2 className="text-4xl md:text-5xl text-orange-500 mb-[40px] text-center md:text-start ">
             SKILLS
-            </h2>
+          </h2>
           <Skills />
         </div>
         <div className="w-full md:w-[60%]">
-          <h2 className="text-4xl md:text-5xl text-orange-500 mb-[40px] ">Experience</h2>
+          <h2 className="text-4xl md:text-5xl text-orange-500 mb-[40px] text-center md:text-start">
+            Experience
+          </h2>
           <Experience />
         </div>
       </div>

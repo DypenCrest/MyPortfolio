@@ -22,7 +22,7 @@ const Projects = () => {
             </span>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-12 md:gap-4">
+          <div className="flex flex-col sm:flex-row gap-12 md:gap-4 w-full flex-wrap">
             {projects.slice(0, 3).map((project, index) => (
               <Zoom>
                 <div className="flex justify-center items-center w-full md:w-[380px] h-full md:h-[500px] md:border-4 rounded-xl border-orange-400 duration-300 py-2 md:px-4">
