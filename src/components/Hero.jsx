@@ -34,7 +34,7 @@ const Hero = () => {
           </Slide>
         </Grid2>
         <img
-          className="hero-img lg:w-[400px] md:w-[350px] w-[250px]  absolute border-8 border-zinc-700 rounded-full left-[20%] top-[22%] md:left-[8%] md:top-[30%]  lg:left-[21%] lg:top-[21%]"
+          className="hero-img lg:w-[400px] md:w-[350px] w-[250px]  absolute border-8 border-zinc-700 rounded-full left-[17%] top-[22%] md:left-[8%] md:top-[30%]  lg:left-[21%] lg:top-[21%]"
           src={headerData.image}
           alt="Dipen Shrestha"
         />
